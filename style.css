@@ -70,6 +70,10 @@
     display: none;
 }
 
+.color{
+    color: #0fb78d;
+}
+
 .sub-banner{
     width: 600px;
     margin: auto;
