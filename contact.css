@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+}
+
+
+.html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(212, 214, 216);
+    padding: 20px 50px;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 5px;
+
+}
+
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+   
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: grey;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav-icons img{
+    width: 20px;
+    margin: 0 20px;
+}
+
+.nav-icons{
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu a.active{
+    border-bottom: 1px solid black;
+    color: #0fb78d;
+}
+
+.menu{
+    display: none;
+}
+
+.contact{
+    background-color: lightgray;
+    padding: 100px;
+}
+
+.contact h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+.contact p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.contact a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: #0fb78d;
+}
+
+.banner-22{
+    
+    height: 50px;
+    width: 340px;
+   
+}
+.banner-23{
+    
+    height: 50px;
+    width: 340px;
+    margin-left: 10px;
+}
+
+.the-input{
+    margin-top: 30px;
+    height: 40px;
+    width: 700px;
+}
+
+.texture{
+    margin-top: 40px;
+    height: 200px;
+    width: 700px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.send{
+    margin-top: 30px;
+    background-color: #0fb78d;
+    color: white;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.place{
+    display: flex;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.place img{
+    background-color: #0fb78d;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.loc{
+    padding-left: 20px;
+}
+
+.mail{
+    display: flex;
+}
+
+.row1{
+    width: 85%;
+    margin: 40px auto;
+    gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.column{
+    width: 100%;
+}
+
+
+.flex{
+    width: 85%;
+    margin: 20px auto;
+    gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}  
+.lower{
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.lower-links{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.flex h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 30px auto;
+}
+
+.banner-input{
+    height: 40px;
+    width: 350px;
+    border: 1px solid black;
+    padding-left: 10px;
+  
+}
+
+.banner-2{
+    height: 43px;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100px;
+    margin-right: 30px;
+}
+.h4{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 90px;
+}
+
+.log{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media screen and (max-width: 991px){
+    .nav-menu{
+            display: none;
+    }    
+    .menu{
+        display: block;
+    }
+    .sub-banner h4{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 768px){
+   
+    .row1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .flex{
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .texture{
+        width: 600px;
+    }
+    .the-input{
+        width: 600px;
+    }
+    .banner-22{
+        width: 250px;
+    }
+    .banner-23{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .row1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .flex{
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .texture{
+        width: 300px;
+    }
+    .the-input{
+        width: 300px;
+    }
+    .banner-22{
+        width: 100px;
+    }
+    .banner-23{
+        width: 100px;
+    }
+}
